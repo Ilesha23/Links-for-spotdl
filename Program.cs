@@ -25,7 +25,7 @@ namespace lfs
             {
                 temp[i] = s.Substring(a, linkLength);
                 a += linkLength;
-                System.Diagnostics.Process.Start(@"external\spotdl.exe", $" -o C:\\Users\\{Environment.UserName}\\Desktop\\Music {temp[i]}");
+                System.Diagnostics.Process.Start(@"spotdl.exe", $" -o C:\\Users\\{Environment.UserName}\\Desktop\\Music {temp[i]}");
                 System.Threading.Thread.Sleep(50);
                 if ((i + 1) % 5 == 0)
                 {
